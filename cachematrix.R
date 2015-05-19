@@ -1,9 +1,9 @@
-## These two functions are used to invert a matrix.  Most importantly, they
-## ensure that 
+## PROGRAMMING ASSIGNMENT 2
 
+## Includes two functions which invert a given invertible matrix
+
+##FUNCTION 1
 ## This function creates a special "matrix" object that can cache its inverse.
-
-## the error is within makeCacheMatrix
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -19,13 +19,13 @@ makeCacheMatrix <- function(x = matrix()) {
              getsolve = getsolve)
 }
 
+## FUNCTION 2
 ## This function computes the inverse of the special "matrix" returned by 
 ## makeCacheMatrix above. If the inverse has already been calculated (and 
 ## the matrix has not changed), then the cachesolve should retrieve the inverse 
 ## from the cache.
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
         m <- x$getsolve
         if(!is.null(m)) {
                 message("getting cached data")
