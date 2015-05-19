@@ -38,11 +38,13 @@ cacheSolve <- function(x, ...) {
 }
 
 ## TEST
-## 
+## The below is used to test whether the code produces the expected result
 
-vector <- makeCacheMatrix(matrix(c(9,10,3,20,25,30,35,40,45,50,3,8,65,70,75,80), 
-                            nrow=4, byrow=T))
-vector
+a <- matrix(c(9,10,3,20,25,30,35,40,45,50,3,8,65,70,75,80), 
+            nrow=4, byrow=T)
+a
+
+vector <- makeCacheMatrix(a)
 
 cacheSolve(vector)
 
